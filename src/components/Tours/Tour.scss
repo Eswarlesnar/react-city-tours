@@ -1,0 +1,58 @@
+$mainGreen: #008000;
+$mainBlack: #222;
+$mainGrey: rgb(177, 166, 166);
+$mainWhite: #ced4da;
+
+.tour {
+  background: $mainGrey;
+  border-radius: 0.8rem;
+  margin: 1rem 0;
+  padding: 0.2rem;
+  img {
+    width: 100%;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    display: block;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.5rem;
+  color: $mainGreen;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.image-container:hover .close-btn {
+  opacity: 1;
+}
+
+.tour-info {
+  padding: 0.5rem 0;
+
+  h3 {
+    text-transform: uppercase;
+    color: $mainBlack;
+  }
+  h5 {
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    color: $mainGreen;
+  }
+  h6 {
+    text-transform: capitalize;
+    margin: 0.5rem 0;
+    span {
+      color: $mainGreen;
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
